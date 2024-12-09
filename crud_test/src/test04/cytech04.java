@@ -6,10 +6,11 @@ public class cytech04 {
 
 	public static void main(String[] args) {
 		
-		long epochSeconds = Instant.now().getEpochSecond() % 2 ;
+		long epochSeconds = Instant.now().getEpochSecond()  ;
 		int seconds = (int)epochSeconds;
 		
-		switch(seconds) {
+		switch(seconds %2) {
+		
 		case 1 :
 			System.out.println("奇数です");
 			break;
